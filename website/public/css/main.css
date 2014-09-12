@@ -1,0 +1,64 @@
+html {
+  font-family: 'Lato, Helvetica';
+}
+
+body {
+  height: 100%
+}
+
+div.jumbotron {
+  margin-bottom: 0px;
+}
+
+nav.navbar {
+  margin-bottom: 0px;
+}
+
+div.main {
+
+}
+
+div.main h1 {
+  margin-bottom: 0px;
+  font-weight: 900
+}
+
+div.main h2 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+div.main h5 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+div.iphone {
+  height:300px;
+}
+
+div.rounded {
+  border: 1px solid;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.transparent::before {
+  position: absolute;
+}
+.transparent{
+  position: relative;
+  margin-top: 10px;
+  margin-right: 100px;
+  float:right;
+}
+.transparent::after {
+  position: relative;
+}
+
+.poll {
+  margin-bottom: 5px;
+}
+.poll span {
+  margin-right: 3px;
+}

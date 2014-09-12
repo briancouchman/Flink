@@ -28,6 +28,8 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
         <link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/skin.css" />
         <title>Hello World</title>
     </head>
     <body>
@@ -37,7 +39,7 @@
         <div class="scrollable">
           <div class="scrollable-content">
             <div class="list-group" toggle="off" bubble target="mainSidebar">
-              <a class="list-group-item" href="#/">Home <i class="fa fa-chevron-right pull-right"></i></a>
+              <a class="list-group-item" href="#/profile">Profil <i class="fa fa-chevron-right pull-right"></i></a>
               <!-- ... -->
             </div>
 
@@ -51,7 +53,7 @@
         <div class="navbar navbar-app navbar-absolute-top">
 
             <div class="navbar-brand navbar-brand-center" yield-to="title">
-              <span>FLink</span>
+              <h3>Flink</h3>
             </div>
 
             <div class="btn-group pull-left">
@@ -60,17 +62,17 @@
               </div>
             </div>
 
-            <div class="btn-group pull-right" yield-to="navbarAction">
+            <!--div class="btn-group pull-right" yield-to="navbarAction">
               <div class="btn btn-navbar">
                 <i class="fa fa-plus"></i> New
               </div>
-            </div>
+            </div-->
         </div>
 
         <div class="navbar navbar-app navbar-absolute-bottom">
           <div class="btn-group justified">
-            <a href="#/route1" class="btn btn-navbar btn-icon-only"><i class="fa fa-home fa-navbar"></i></a>
-            <a href="#/route2" class="btn btn-navbar btn-icon-only"><i class="fa fa-list fa-navbar"></i></a>
+            <a href="#/" class="btn btn-navbar btn-icon-only"><i class="fa fa-home fa-navbar"></i></a>
+            <!--a href="#/" class="btn btn-navbar btn-icon-only"><i class="fa fa-list fa-navbar"></i></a-->
           </div>
         </div>
 
@@ -78,7 +80,7 @@
             <ng-view class="app-content"></ng-view>
         </div>
       </div>
-        <!--script type="text/javascript" src="cordova.js"></script-->
+        <script type="text/javascript" src="cordova.js"></script>
 
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
@@ -87,6 +89,9 @@
 
         <script src="js/app.js"></script>
         <script src="js/controllers/home-controller.js"></script>
+        <script src="js/controllers/login-controller.js"></script>
+        <script src="js/controllers/profile-controller.js"></script>
+        <script src="js/controllers/search-controller.js"></script>
         <script src="js/route.js"></script>
 
         <script type="text/javascript" src="js/index.js"></script>
