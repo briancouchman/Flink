@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <p class="text-center title">Connection</p>
+    </div>
+  </div>
+
+  <form role="form" name="loginForm">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+          <div class="form-group">
+            <input type="text" class="form-control" id="user" ng-model="user.profile" placeholder="profil" required/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="password" ng-model="user.password" placeholder="mot de passe" required/>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <p class="text-center title">
+          <button class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="login()">
+            <strong>Entrer</strong>
+          </button>
+        </p>
+      </div>
+    </div>
+  </form>
+</div>

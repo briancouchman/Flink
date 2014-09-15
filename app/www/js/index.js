@@ -33,6 +33,8 @@ var phonegap = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        console.log("Device ready");
+
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
@@ -44,6 +46,12 @@ var phonegap = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+        if (window.cordova.logger) {
+          window.cordova.logger.__onDeviceReady();
+        }
+
         console.log('Received Event: ' + id);
+
+
     }
 };
