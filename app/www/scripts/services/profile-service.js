@@ -22,7 +22,7 @@ angular.module('flink').factory('profileService', function($resource, storageSer
     },
 
     getAllProfiles: function(_username){
-      return Profile.get().$promise;
+      return Profile.query().$promise;
     },
 
 

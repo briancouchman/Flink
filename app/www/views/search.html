@@ -1,14 +1,14 @@
-<div class="container home">
+<div class="container search">
   <div class="row">
     <div class="col-xs-12">
-      Libres ce soir...
+
     </div>
   </div>
   <div class="row" >
     <div class="col-xs-12">
-      <p>
-        TODO
-      </p>
+      <div class="list-group profiles">
+        <a href="#/profile/{{profile.user}}" class="list-group-item" ng-repeat="profile in profiles">{{profile.user}}</a>
+      </div>
     </div>
   </div>
 </div>

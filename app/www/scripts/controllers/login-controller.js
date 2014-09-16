@@ -9,11 +9,13 @@ angular.module('flink').controller('LoginController', function($scope, $location
     loginService.authenticate($scope.user.profile,$scope.user.password)
       .then(
         function(profile){
-          console.log(profile.user + " authenticated");
+          if(typeof profile !== "undefined"){ 
+            console.log(profile.user + " authenticated");
 
-          profileService.registerCurrentProfile(profile);
+            profileService.registerCurrentProfile(profile);
 
-          $location.path("/profile");
+            $location.path("/profile");
+          }
         },
         function(error){
           console.log(error);

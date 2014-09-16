@@ -14,3 +14,19 @@
   font-size: 20px;
   font-weight: bold;
 }
+
+.list-group-item {
+
+}
+
+.search .profiles a{
+  color: #ecf0f1;
+  background-color: #3d4f61;
+  border: solid 1px black;
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.search .profiles a:hover{
+  background-color: #2c3e50;
+}

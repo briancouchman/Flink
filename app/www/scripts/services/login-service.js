@@ -25,8 +25,8 @@ angular.module('flink').factory('loginService', function($http, storageService, 
 
 	return {
     authenticate: function(username, password){
-			return profileService.authenticateProfile(username, password)
-			.then(
+			var promise = profileService.authenticateProfile(username, password);
+			promise.then(
 				function(profile){
 					console.log("Authentication of " + user + " successfull");
 					persistSession({
@@ -38,7 +38,8 @@ angular.module('flink').factory('loginService', function($http, storageService, 
 				function(error){
 					console.log(error);
 				}
-			);
+			)
+			return promise;
     },
 
     isAuthentified: function(){

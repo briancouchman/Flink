@@ -8,3 +8,15 @@
 .profile .preferences li {
   height: 34px;
 }
+
+.search .profiles {
+  background-color: transparent
+}
+
+.search .profiles a{
+  background-color: transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

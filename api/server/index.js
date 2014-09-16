@@ -42,6 +42,25 @@ app.get('/profiles/:username/:password', function(req,res) {
   res.status(403).send("User " + username + " cannot be authenticated.");
 })
 
+
+/**
+ * Find a profile
+ * @username the username for that profile (i.e. the key)
+ */
+app.get('/profiles/:username', function(req,res) {
+  var username = req.params.username;
+
+  var profile = profiles[username];
+  if(typeof profile !== "undefined"){
+    res.send({
+      user: username,
+      description: profile.description
+    });
+  }
+  console.log("User " + username + " cannot be found.");
+  res.status(404).send("User " + username + " cannot be found.");
+})
+
 app.get('/profiles', function(req,res){
   var _profiles = []
 

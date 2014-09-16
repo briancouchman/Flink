@@ -16,6 +16,17 @@ angular.module('flink').config(function($routeProvider,$locationProvider) {
       }
     }
   })
+  .when( '/profile/:username', {
+    templateUrl: "views/profile.html",
+    controller: 'ProfileController',
+    resolve: {
+      authentified: function(loginService, $location){
+        if(!loginService.isAuthentified()){
+          $location.path('/login');
+        };
+      }
+    }
+  })
   .when( '/search', {
     templateUrl: "views/search.html",
     controller: 'SearchController',
