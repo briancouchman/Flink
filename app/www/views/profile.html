@@ -1,12 +1,12 @@
 <div class="container profile">
   <div class="row">
     <div class="col-xs-5">
-      <img ng-src="{{picture}}" alt="{{profile}}" class="img-rounded"/>
+      <img ng-src="{{profile.picture}}" alt="{{profile.username}}" class="img-rounded"/>
     </div>
     <div class="col-xs-7  ">
-      <h3>{{profile}}</h3>
+      <h3>{{profile.username}}</h3>
 
-      <p class="lead">Couple classe et sympa, on ressemble pas mal a Johnny Depp et Vanessa Paradis, mais ce n'est pas nous lol.</p>
+      <p class="lead">{{profile.description}}</p>
     </div>
   </div>
   <div class="row">

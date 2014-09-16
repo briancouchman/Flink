@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module('flink').factory('loginService', function($http, $q, $location, storageService) {
+angular.module('flink').factory('loginService', function($http, storageService, profileService) {
 	console.log("Loading loginService");
 
-	var root = "http://ec2-54-68-223-98.us-west-2.compute.amazonaws.com";
 
 
 
@@ -25,27 +24,21 @@ angular.module('flink').factory('loginService', function($http, $q, $location, s
   }
 
 	return {
-    authenticate: function(user,pwd){
-			console.log(root + '/authenticate/' + user);
-      $http.get(root + '/authenticate/' + user)
-        .success(function(response) {
-          if(response.authenticated){
-						console.log("Authentication of " + user + " successfull");
-            persistSession({
-              authentified: true,
-              user: response.user
-            });
-
-						console.log("Redirecting to /profile");
-            $location.path('/profile');
-          }
-        }).error(function(response){
-          var data = response.data,
-            status = response.status,
-            header = response.header,
-            config = response.config;
-            console.log("Error [" + data + "," + status + "," + header + "," + config + "]");
-        });
+    authenticate: function(username, password){
+			return profileService.authenticateProfile(username, password)
+			.then(
+				function(profile){
+					console.log("Authentication of " + user + " successfull");
+					persistSession({
+						authentified: true,
+						user: profile.user
+					});
+					profileService.registerCurrentProfile(profile);
+				},
+				function(error){
+					console.log(error);
+				}
+			);
     },
 
     isAuthentified: function(){
@@ -55,6 +48,7 @@ angular.module('flink').factory('loginService', function($http, $q, $location, s
     logout: function(){
       console.log("Login service - logout");
       cleanSession();
+			profileService.clearCurrentProfile();
     }
   }
 });

@@ -13,7 +13,7 @@ angular.module('flink').factory('storageService', function() {
       window.localStorage.setItem(key, value);
     },
 
-    get: function(key, value){
+    get: function(key){
       return window.localStorage.getItem(key);
     },
 

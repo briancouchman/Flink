@@ -51,7 +51,5 @@ var phonegap = {
         }
 
         console.log('Received Event: ' + id);
-
-
     }
 };
