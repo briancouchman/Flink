@@ -6,10 +6,11 @@ angular.module('flink').controller('LoginController', function($scope, $location
 
 
   $scope.login = function() {
+    console.log("login controller - login");
     loginService.authenticate($scope.user.profile,$scope.user.password)
       .then(
         function(profile){
-          if(typeof profile !== "undefined"){ 
+          if(typeof profile !== "undefined"){
             console.log(profile.user + " authenticated");
 
             profileService.registerCurrentProfile(profile);
@@ -18,6 +19,7 @@ angular.module('flink').controller('LoginController', function($scope, $location
           }
         },
         function(error){
+          $scope.errorMessage = error;
           console.log(error);
         }
       );

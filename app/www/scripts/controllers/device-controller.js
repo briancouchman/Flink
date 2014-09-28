@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('flink', ['fsPhonegap']).controller('DeviceCtrl', function(){
-  DeviceService.ready.then(
+angular.module('flink', ['fsPhonegap']).controller('deviceCtrl', function(deviceService){
+  deviceService.ready.then(
       function resolved(resp) {
          $scope.ready = true;
       },

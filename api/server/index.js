@@ -1,7 +1,7 @@
 var express = require('express')
 var AWS = require('aws-sdk');
 var fs = require('fs');
-var md5 = require('MD5');
+//var md5 = require('MD5');
 
 var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
 AWS.config.credentials = credentials;
@@ -31,7 +31,7 @@ app.get('/profiles/:username/:password', function(req,res) {
 
   var profile = profiles[username];
   if(typeof profile !== "undefined"){
-    if(md5(profile.password) == password){
+    if(/*md5(profile.password)*/ profile.password == password){
       res.send({
         user: username,
         description: profile.description
