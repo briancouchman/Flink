@@ -1,167 +1,180 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Flink - Simplifier le libertinage</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<html lang="en" ng-app="glidr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<title>Glidr - Simplifier le libertinage</title>
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/skin.css">
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
 
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
 
-    <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" alt="Glidr Mobile Application"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sidebar-left.html">Left Sidebar</a></li>
+							<li class="active"><a href="sidebar-right.html">Right Sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
 
-    ga('create', 'UA-54530932-1', 'auto');
-    ga('send', 'pageview');
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<h1 class="lead">GLIDR</h1>
+				<p class="tagline">Une application mobile pour facliter les rencontres libertines</p>
+				<p><a class="btn btn-default btn-lg" role="button" href="/#/signup">Creer un profil</a> <a class="btn btn-action btn-lg" role="button">Telecharger pour Android</a></p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
 
-  </script>
-    <!-- End Google Analytics -->
-  </head>
-
-  <body>
-    <div>
-      <nav class="navbar navbar-default navbar-static-top main" role="navigation">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-
-          <!-- Collect the nav links, forms, and other content for toggling
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav choose_page">
-              <li class="home active"><a href="/">Home</a></li>
-              <li class="testimonials"><a href="/testimonials">Testimonials</a></li>
-              <li class="about"><a href="/about">Company</a></li>
-              <li class="contact"><a href="/contact">Contact</a></li>
-              <li class="signin"><a href="/sign-in">Sign in</a></li>
-            </ul>
-          </div>--><!-- /.navbar-collapse -->
-        </div>
-      </nav>
+    <div ng-view>
     </div>
 
+	<!-- Social links. @TODO: replace by link/instructions in template -->
+	<section id="social">
+		<div class="container">
+			<div class="wrapper clearfix">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_linkedin_counter"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				</div>
+				<!-- AddThis Button END -->
+			</div>
+		</div>
+	</section>
+	<!-- /social links -->
 
-    <div class="main">
-      <div class="jumbotron dark">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="text-right">
-                <h1>Flink</h1>
-                <h5>A fling in a blink</h5>
-                <br/>
-                <br/>
-                <h2>Simplifier le libertinage</h2>
-                <br/>
-                <a class="btn btn-primary btn-lg" href="code.html">Demander un code d'activation</a>
-                <button class="btn btn-primary btn-lg" ddata-toggle="popover" title="Bientôt" data-content="L'application Flink est en cours de d&eacute;veloppement pour Android et iPhone. DEmandez un code d'activation pour laisser votre email et etre prevenu quand elle sera prete."
-                onclick="ga('send', 'event', 'app', 'download');">Telecharger l'application</button>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="iphone">  </div>
-            </div>
-          </div>
-        </div><!--container-->
-      </div>
-    </div>
 
-    <div class="secondary">
-      <div class="jumbotron text-block">
-        <div class="container rounded">
-          <h3>Pourquoi Flink ?</h3>
-          <p>Encore un site libertin ?! Non.</p>
-          <p>Flink a une approche radicalement différente des autres sites libertins. Chez Flink, nous croyons au libertinage simple, facile et adapté à nos vies où le temps est un luxe.</p>
-          <p>Flink c'est l'union de Songza et Tinder au service des libertins qui ne veulent pas  passer des heures sur un site internet ou sont agacés d'avoir 150 favoris qu'ils ne recontreront jamais. Notre application mobile a été conçu pour ceux qui veulent faire des rencontres impulsives, au moment où ils sont d’humeur coquine, sans avoir à planifier pendant des jours.</p>
-          <p>Flink, c’est une promesse de rencontre libertine ce soir, alors que la gardienne arrive dans 30 minutes.</p>
-        </div>
-      </div>
-    </div>
+	<footer id="footer" class="top-space">
 
-    <div class="secondary">
-      <div class="jumbotron text-block">
-        <div class="container rounded">
-          <span class="glyphicon glyphicon-globe transparent"></span>
-          <h3>G&eacute;olocalis&eacute;</h3>
-          <p>Flink utilise la géolocalisation de votre téléphone pour vous aider à trouver les libertins autour de votre position actuelle: à la maison, dans une soirée ennuyeuse ou en fin de semaine à la campagne.</p>
-          <div class="poll">
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'geolocalisation', 'like');">
-              <span class="glyphicon glyphicon-thumbs-up"></span>J'aime
-            </button>
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'geolocalisation', 'dislike');">
-              <span class="glyphicon glyphicon-thumbs-down"></span>Non merci
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
 
-    <div class="secondary">
-      <div class="jumbotron text-block">
-        <div class="container rounded">
-          <span class="glyphicon glyphicon-link transparent"></span>
-          <h3>Cercle s&eacute;lectif</h3>
-          <p>Flink garantit des gens fiables, recommandés, experimentés et prêts à passer à l'action.</p>
-          <p>Flink est une communauté sélective où seules les personnes recommandées par un membre et acceptées par un ambassadeur de Flink pourront obtenir le code d'activation pour application mobile.</p>
-          <p>L'objectif est de vous permettre de rencontrer de nouveaux partenaires en toute confiance, sécurité et confidentialité.</p>
-          <div class="poll">
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'cercle', 'like');">
-              <span class="glyphicon glyphicon-thumbs-up"></span>J'aime
-            </button>
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'cerle', 'dislike');">
-              <span class="glyphicon glyphicon-thumbs-down"></span>Non merci
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>+234 23 9873237<br>
+								<a href="mailto:#">some.email@somewhere.com</a><br>
+								<br>
+								234 Hidden Pond Road, Ashland City, TN 37015
+							</p>
+						</div>
+					</div>
 
-    <div class="secondary">
-      <div class="jumbotron text-block">
-        <div class="container rounded">
-          <span class="glyphicon glyphicon-usd transparent"></span>
-          <h3>Pas de paiement par mois</h3>
-          <p>Flink ne souhaite pas vous mettre un nouvel abonnement mensuel sur les épaules. Vous en payez probablement déjà un sur un autre site libertin , il serait fatiguant de devoir en payer un deuxième!</p>
-          <p>Flink vous propose un simple système de crédits, que vous utilisez quand vous le souhaitez. Pas besoin de choisir entre l'abonnement silver, gold ou premium. Vous payez juste ce que vous utilisez.</p>
-          <div class="poll">
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'pricing', 'like');">
-              <span class="glyphicon glyphicon-thumbs-up"></span>J'aime
-            </button>
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'pricing', 'dislike');">
-              <span class="glyphicon glyphicon-thumbs-down"></span>Non merci
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-twitter fa-2"></i></a>
+								<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>
+							</p>
+						</div>
+					</div>
 
-    <div class="secondary">
-      <div class="jumbotron text-block">
-        <div class="container rounded">
-          <span class="glyphicon glyphicon-heart-empty transparent"></span>
-          <h3>100% libertin</h3>
-          <p>Flink est une application faite pour les libertins du Québec, par des libertins du Québec.</p>
-          <p>Toutes les personnes impliquées dans notre projet sont libertines. Toutes. Sans exceptions.</p>
-          <p>Parce que nous pensons que les libertins comprennent mieux ce dont les libertins ont besoin.</p>
-          <div class="poll">
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'libertin', 'like');">
-              <span class="glyphicon glyphicon-thumbs-up"></span>J'aime
-            </button>
-            <button type="button" class="btn btn-default btn-xs" onclick="ga('send', 'event', 'libertin', 'dislike');">
-              <span class="glyphicon glyphicon-thumbs-down"></span>Non merci
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Text widget</h3>
+						<div class="widget-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> |
+								<a href="about.html">About</a> |
+								<a href="sidebar-right.html">Sidebar</a> |
+								<a href="contact.html">Contact</a> |
+								<b><a href="signup.html">Sign up</a></b>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">
+								Copyright &copy; 2014, Why Nuts. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+							</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+
+
+
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+    <script src="js/angular/angular-resource.js"></script>
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/controllers/home-controller.js"></script>
+    <script src="scripts/controllers/signup-controller.js"></script>
+    <script src="scripts/services/profile-service.js"></script>
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
 </html>

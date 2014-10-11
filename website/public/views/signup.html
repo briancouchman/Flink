@@ -1,0 +1,72 @@
+<!-- container -->
+<div class="container">
+
+    <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Registration</li>
+    </ol>
+
+    <div class="row" >
+
+        <!-- Article main content -->
+        <article class="col-xs-12 maincontent">
+            <header class="page-header">
+                <h1 class="page-title">Registration</h1>
+            </header>
+
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="thin text-center">Enregistrer un profil</h3>
+                        <p class="text-center text-muted">Une fois le profil cree vous pourrez vous logguer avec l'application mobile. </p>
+                        <hr>
+
+                        <form name="signupForm" ng-submit="submitForm(signupForm.$valid)" novalidate>
+                            <div class="top-margin">
+                                <label>Profil <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="username" ng-model="profile.username" required>
+                                <span class="error" ng-show="signupForm.username.$error.required">Le profil est necessaire</span>
+                            </div>
+                            <div class="top-margin">
+                                <label>Email <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" name="email" ng-model="profile.email" required>
+                                <span class="error" ng-show="signupForm.email.$error.required">L'email est necessaire</span>
+                            </div>
+
+                            <div class="row top-margin">
+                                <div class="col-sm-6">
+                                    <label>Mot de passe <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="password" ng-model="profile.password" required>
+                                    <span class="error" ng-show="signupForm.password.$error.required">Le mot de passe est necessaire</span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Confirmation du mot de passe <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="passwordConfirm" ng-model="passwordConfirm" required>
+                                    <span class="error" ng-show="signupForm.passwordConfirm.$error.required">Le mot de passe doit etre confirmeé</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <label class="checkbox">
+                                        <input type="checkbox" ng-model="accept" ng-required="true">
+                                        I've read the <a href="page_terms.html">Terms and Conditions</a>
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-right">
+                                    <button class="btn btn-action" type="submit" ng-click="save()">Enregistrer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+        <!-- /Article -->
+
+    </div>
+</div>	<!-- /container -->
