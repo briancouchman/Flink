@@ -1,6 +1,8 @@
 angular.module('fsPhonegap', [])
-.service('DeviceService', ['$document', '$timeout', '$window',  '$q',
+.service('deviceService', ['$document', '$timeout', '$window',  '$q',
   function($document, $timeout, $window, $q) {
+    console.log("Initailizing device service");
+
 
     var defer = $q.defer();
 

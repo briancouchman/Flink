@@ -1,7 +1,11 @@
 'use strict';
 
-angular.module('flink', [
-  "ngRoute",
-  "ngResource",
-  "mobile-angular-ui",
+angular.module('glidr', [
+    "ngRoute",
+    "ngResource",
+    "mobile-angular-ui",
+    'ngCookies',
+    'ngResource',
+    'ngSanitize',
+    "btford.socket-io"
 ])

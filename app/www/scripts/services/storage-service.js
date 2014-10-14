@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('flink').factory('storageService', function() {
+angular.module('glidr').factory('storageService', function() {
   console.log("Loading storageService");
 
 

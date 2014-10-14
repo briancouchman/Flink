@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('flink').factory('geolocationService', function($q, deviceService){
+angular.module('glidr').factory('geolocationService', function($q){
   return {
 
     /**
@@ -11,11 +11,13 @@ angular.module('flink').factory('geolocationService', function($q, deviceService
      * @error error the error
      */
     getPosition: function(){
-      if(deviceService.isReady){
+    //  if(deviceService.isReady){
         var defer = $q.defer();
 
+        console.log("Querying position ");
         navigator.geolocation.getCurrentPosition(
           function(position){
+            console.log("Received position " + position);
             defer.resolve(position);
           },
           function(error) {
@@ -25,9 +27,9 @@ angular.module('flink').factory('geolocationService', function($q, deviceService
           }
         )
         return defer.promise;
-      }else{
-        throw Error("Device is not ready. Geolocation API is not available");
-      }
+    //  }else{
+    //    throw Error("Device is not ready. Geolocation API is not available");
+    //  }
     }
   }
 })

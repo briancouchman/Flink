@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('flink').config(function($routeProvider,$locationProvider) {
+angular.module('glidr').config(function($routeProvider,$locationProvider) {
   $routeProvider.when('/login', {
     templateUrl: 'views/login.html',
     controller: 'LoginController'
@@ -37,6 +37,17 @@ angular.module('flink').config(function($routeProvider,$locationProvider) {
         };
       }
     }
+  })
+  .when( '/chat', {
+      templateUrl: "views/chat.html",
+      controller: 'ChatController',
+      resolve: {
+          authentified: function(loginService, $location){
+              if(!loginService.isAuthentified()){
+                  $location.path('/login');
+              };
+          }
+      }
   })
   .when( '/', {
     templateUrl: "views/home.html",

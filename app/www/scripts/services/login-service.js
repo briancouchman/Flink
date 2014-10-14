@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('flink').factory('loginService', function($http, storageService, profileService) {
+angular.module('glidr').factory('loginService', function($http, storageService, profileService) {
 	console.log("Loading loginService");
 
 
@@ -25,6 +25,7 @@ angular.module('flink').factory('loginService', function($http, storageService, 
 
 	return {
     authenticate: function(username, password){
+			console.log("login service - authenticate");
 			var promise = profileService.authenticateProfile(username, password);
 			promise.then(
 				function(profile){
