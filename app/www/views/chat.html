@@ -2,4 +2,10 @@
 
     <input type="text" class="form-control" ng-model="message"/>
     <button type="submit" class="btn btn-primary" ng-click="sendMessage()">Send</button>
+<br/>
+    <ul class="unstyled-list">
+        <li ng-repeat="msg in messages track by $index">{{msg.user}} - {{msg.message}}</li>
+    </ul>
+
+    <span>{{messageLog}}</span>
 </div>
