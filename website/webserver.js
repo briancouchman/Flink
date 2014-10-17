@@ -10,3 +10,4 @@ app.get('/', function(req, res){
     res.sendfile(__dirname + '/public/index.html');
 });
 app.listen(3000);
+console.log("Leeloo website up and running on port 3000");

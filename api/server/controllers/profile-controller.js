@@ -16,7 +16,7 @@ module.exports = {
     },
 
     isAuthenticated: function(username, password) {
-        var profile = profiles[username];
+        var profile = this.get(username);
         if(typeof profile !== "undefined"){
             if(/*md5(profile.password)*/ profile.password == password){
                return true;
@@ -47,7 +47,8 @@ module.exports = {
             _profiles.push({
                 username: _profile.username,
                 description: _profile.description,
-                email: _profile.email
+                email: _profile.email,
+                password: _profile.password
             })
         }
 

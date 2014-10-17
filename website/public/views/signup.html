@@ -1,23 +1,55 @@
+<script type="text/javascript">ga('send', 'signup');</script>
+
 <!-- container -->
 <div class="container">
 
-    <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li class="active">Registration</li>
-    </ol>
-
-    <div class="row" >
-
+    <div class="row" style=" margin-top: 140px">
         <!-- Article main content -->
-        <article class="col-xs-12 maincontent">
-            <header class="page-header">
-                <h1 class="page-title">Registration</h1>
-            </header>
+        <article class="col-lg-10 maincontent">
 
-            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h3 class="thin text-center">Enregistrer un profil</h3>
+            <div>
+                <div class="panel panel-default" style="position: relative;">
+                    <div class="panel-body"  data-spy="scroll" data-target="#enregNavbar" data-offset="0" >
+                        <h3 id="etiquette" class="thin text-center">Etiquette</h3>
+                        <p class="text-muted">
+                            Faire partie de la communaut&eacute; Glidr est une affaire de confiance, et de s&eacute;cutit&eacute;.
+                            Le plaisir de nos membres s'appuie en partie sur le respect de quelques regles simples, qui seront probablement percues comme du bon sens par la plupart d'entre vous.
+                        </p>
+
+                        <h5>La politesse</h5>
+                        <p class="text-muted"></p>
+                        <h5>L'hygiene</h5>
+                        <p class=" text-muted"></p>
+                        <h5>Les drogues et alcool</h5>
+                        <p class="text-muted"></p>
+
+                        <h3 id="conditions" class="thin text-center">Conditions</h3>
+                        <p class=" text-muted">
+                            La communaute Glidr est sur invitation seulement, et certaines conditions s'appliquent. En faire partie n'est pas un droit mais un choix que vous faites et nous faisons.
+                        </p>
+
+                        <h5>L'experience</h5>
+                        <p class=" text-muted">
+                            Glidr n'est pas concu pour s'addresser aux couples qui en sont a leurs tout debuts d'ans l'echangisme.
+                            Le service s'adresse a des couples experimentes qui savent ce qu'ils veulent. Les jeunes et les nouveaux sont les bienvenus, mais si vous evous demander si l'echangisme est pour vous, alors cette application ne repondra pas a vos besoins
+                        </p>
+                        <p class=" text-muted">
+                            Nous travaillons sur une autre application, dediee aux couples qui sont sur le point de tenter l'aventure. Conseils, temoignages, reponses...
+                        </p>
+                        <h5>L'age</h5>
+                        <p class=" text-muted">
+                            Glidr ne veut faire aucune discrimination, ni presupposer du comportement d'individu base sur son age. <br/>
+                            Glidr est destin&eacute; aux trentenaires dans un sens tres tres large. Large comme de 20 a 45 ans :-). L'objectif n'est pas d'eclure un groupe d'age en particulier, mais de permettre aux membres de GLidr de se retrouver avec des couples qui ont des points en communs avec eux.<br/>
+                            Nous nous reservons le droit de refuser l'inscription d'un couple qui nous semblerait tres eloignes de ce qu'attendent les membres.
+                        </p>
+                        <h5>Le comportement</h5>
+                        <p class=" text-muted">
+                            La lecture et l'acceptation des regles ci-dessus sont essentielles. Si des membres font etat d'un comportement innacceptable de maniere repetee, le profil GLidr sera ferm&eacute;
+
+                        </p>
+
+
+                        <h3 id="enregistrement" class="thin text-center">Enregistrer un profil</h3>
                         <p class="text-center text-muted">Une fois le profil cree vous pourrez vous logguer avec l'application mobile. </p>
                         <hr>
 
@@ -50,10 +82,7 @@
 
                             <div class="row">
                                 <div class="col-lg-8">
-                                    <label class="checkbox">
-                                        <input type="checkbox" ng-model="accept" ng-required="true">
-                                        I've read the <a href="page_terms.html">Terms and Conditions</a>
-                                    </label>
+
                                 </div>
                                 <div class="col-lg-4 text-right">
                                     <button class="btn btn-action" type="submit" ng-click="save()">Enregistrer</button>
