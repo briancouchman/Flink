@@ -49,6 +49,17 @@ angular.module('glidr').config(function($routeProvider,$locationProvider) {
           }
       }
   })
+  .when( '/geolocation', {
+      templateUrl: "views/geolocation.html",
+      controller: 'GeolocationController',
+      resolve: {
+          authentified: function(loginService, $location){
+              if(!loginService.isAuthentified()){
+                  $location.path('/login');
+              };
+          }
+      }
+  })
   .when( '/', {
     templateUrl: "views/home.html",
     controller: 'HomeController',

@@ -20,3 +20,10 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+#logger {
+    display: none;
+}
+
+.angular-google-map-container { height: 400px; margin: 15px; }
+    .angular-google-map-container img{ max-width: none; }

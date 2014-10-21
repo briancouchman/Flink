@@ -1,11 +1,21 @@
-<div class="form-group">
-
-    <input type="text" class="form-control" ng-model="message"/>
-    <button type="submit" class="btn btn-primary" ng-click="sendMessage()">Send</button>
-<br/>
-    <ul class="unstyled-list">
-        <li ng-repeat="msg in messages track by $index">{{msg.user}} - {{msg.message}}</li>
-    </ul>
-
-    <span>{{messageLog}}</span>
+<div class="container profile">
+    <div class="row">
+        <form>
+            <div class="col-xs-9">
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="message"/>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" ng-click="sendMessage()">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="bubbles">
+    <div ng-repeat="msg in messages track by $index" class="bubble"ng-class="{'bubble--alt': !msg.me}">
+        {{msg.message}}
+    </div>
 </div>

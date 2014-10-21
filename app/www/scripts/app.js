@@ -7,5 +7,6 @@ angular.module('glidr', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    "btford.socket-io"
+    "btford.socket-io",
+    "google-maps".ns()
 ])

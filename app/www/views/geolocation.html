@@ -1,0 +1,12 @@
+<h5>Vous etes ici :{{position.coords.longitude}} / {{position.coords.latitude}}</h5>
+
+<ui-gmap-google-map center="map.center" zoom="map.zoom" control="map.control">
+    <ui-gmap-marker idKey='device-position' coords='position.coords'></ui-gmap-marker>
+</ui-gmap-google-map>
+
+<div overlay="positionLoading" default='active'>
+    <h4 class="overlay-title">Loading device position</h4>
+    <p>
+        We are loading the device's position. Please wait.
+    </p>
+</div>

@@ -7,11 +7,4 @@ angular.module('glidr').controller('SearchController', function($scope, searchSe
   profileService.getAllProfiles().then(function(profiles){
       $scope.profiles = profiles;
   });
-
-  searchService.getPosition().then(function(position){
-    console.log("Position in controller");
-    console.log(position);
-    $scope.position = position;
-  });
-
 });

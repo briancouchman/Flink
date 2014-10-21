@@ -1,25 +1,6 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html ng-app='flink'>
+<html ng-app='glidr'>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -30,17 +11,21 @@
         <link rel="stylesheet" href="js/mobile-angular-ui/css/mobile-angular-ui-base.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/skin.css" />
+        <link rel="stylesheet" href="css/chat.css" />
 
-        <title>Glidr App</title>
+        <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+
+        <title>Leeloo</title>
     </head>
     <body>
       <div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar">
-        <h1 class="app-name">Glidr</h1>
+        <h1 class="app-name">Leeloo</h1>
 
         <div class="scrollable">
           <div class="scrollable-content">
             <div class="list-group" toggle="off" bubble target="mainSidebar">
               <a class="list-group-item" href="#/profile">Profil <i class="fa fa-chevron-right pull-right"></i></a>
+              <a class="list-group-item" href="#/chat">Chat <i class="fa fa-chevron-right pull-right"></i></a>
               <a class="list-group-item" href="#/logout">Logout <i class="fa fa-chevron-right pull-right"></i></a>
               <!-- ... -->
             </div>
@@ -55,7 +40,7 @@
         <div class="navbar navbar-app navbar-absolute-top">
 
             <div class="navbar-brand navbar-brand-center" yield-to="title">
-              <h3>Glidr</h3>
+              <h3>Leeloo</h3>
             </div>
 
             <div class="btn-group pull-left">
@@ -65,11 +50,11 @@
               </div>
             </div>
 
-            <!--div class="btn-group pull-right" yield-to="navbarAction">
+            <div class="btn-group pull-right" yield-to="navbarAction">
               <div class="btn btn-navbar">
-                <i class="fa fa-plus"></i> New
+                  <a href="/#/geolocation"> <i class="fa fa-globe"></i></a>
               </div>
-            </div-->
+            </div>
         </div>
 
         <div class="navbar navbar-app navbar-absolute-bottom">
@@ -86,11 +71,18 @@
         </div>
       </div>
         <script type="text/javascript" src="cordova.js"></script>
-
+        <script src="http://localhost:8080/socket.io/socket.io.js"></script>
         <script src="js/angular/angular.js"></script>
         <script src="js/angular/angular-route.js"></script>
         <script src="js/angular/angular-resource.js"></script>
         <script src="js/mobile-angular-ui/js/mobile-angular-ui.js"></script>
+        <script src="js/angular/angular-cookies.js"></script>
+        <script src="js/angular/angular-sanitize.js"></script>
+        <script src="js/angular/angular-socket-io/socket.js"></script>
+
+            <script src='/bower_components/lodash/dist/lodash.min.js'></script>
+            <script src='/bower_components/bluebird/js/browser/bluebird.js'></script>
+            <script src='/bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
 
 
         <script src="scripts/app.js"></script>
@@ -99,16 +91,21 @@
         <script src="scripts/directives/login-directive.js"></script>
         <script src="scripts/directives/logger-directive.js"></script>
 
-        <script src="scripts/services/device-service.js"></script>
+        <!--script src="scripts/services/device-service.js"></script-->
+        <script src="scripts/services/search-service.js"></script>
         <script src="scripts/services/profile-service.js"></script>
         <script src="scripts/services/login-service.js"></script>
         <script src="scripts/services/storage-service.js"></script>
+        <script src="scripts/services/geolocation-service.js"></script>
+        <script src="scripts/services/socket-factory.js"></script>
         <script src="scripts/services/geolocation-service.js"></script>
 
         <script src="scripts/controllers/home-controller.js"></script>
         <script src="scripts/controllers/login-controller.js"></script>
         <script src="scripts/controllers/profile-controller.js"></script>
         <script src="scripts/controllers/search-controller.js"></script>
+        <script src="scripts/controllers/chat-controller.js"></script>
+        <script src="scripts/controllers/geolocation-controller.js"></script>
 
 
         <script type="text/javascript" src="js/index.js"></script>

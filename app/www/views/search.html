@@ -1,13 +1,8 @@
 <div class="container search">
-  <div class="row">
-    <div class="col-xs-12">
-        My position: {{position.coords.longitude}} / {{position.coords.latitude}}
-    </div>
-  </div>
   <div class="row" >
     <div class="col-xs-12">
       <div class="list-group profiles">
-        <a href="#/profile/{{profile.user}}" class="list-group-item" ng-repeat="profile in profiles">{{profile.user}}</a>
+        <a href="#/profile/{{profile.username}}" class="list-group-item" ng-repeat="profile in profiles">{{profile.username}}</a>
       </div>
     </div>
   </div>

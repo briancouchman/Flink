@@ -39,7 +39,10 @@ angular.module('glidr').controller('ChatController', function($scope, socket, pr
         });
 
         // add the message to our model locally
-
+        $scope.messages.push({
+            me: true,
+            message: $scope.message
+        });
 
         // clear message box
         $scope.message = '';
