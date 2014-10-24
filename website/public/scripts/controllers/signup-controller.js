@@ -14,6 +14,18 @@ angular.module('glidr').controller('SignupController', function($scope, profileS
                 })
             }
        // }
+    }
+
+    $scope.signup = function(){
+
+        $scope.email;
+
+
+        ga('send', 'event', 'app', 'signup');
+    }
+
+    $scope.download = function(){
+
 
     }
 

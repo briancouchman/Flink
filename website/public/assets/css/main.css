@@ -1,5 +1,5 @@
 /* Header */
-#head { background:#181015 url( ../images/bg_header1.jpg) no-repeat; background-size: cover; background-position-y: -280px; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head { background:#181015 url( ../images/bg_header1.jpg) no-repeat; background-size: cover; background-position-y: -210px; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Ubuntu", sans-serif, Helvetica, Arial; font-size:60px; margin-bottom:6px; color:white; line-height:1.15em; }
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; font-size:20px; font-family: "Ubuntu" sans-serif; }
@@ -33,6 +33,7 @@
 /* Typography */
 h1, h2, h3, h4, h5, h6 { Helvetica, Arial; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
+p { font-size: 1.1em; }
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
 label { color: #777; }
 .thin { font-weight:300; }
@@ -85,3 +86,9 @@ img.pull-left { margin-right: 10px; }
     .poll button{ padding: 2px 4px; padding: 3px; color: rgba(150, 40, 27, .91); box-shadow: none; }
     .poll button:hover{ padding: 2px 4px;  padding: 3px; color: rgba(150, 40, 27,.9); -webkit-box-shadow:inset 0px 0px 0px 2px rgba(150, 40, 27,.9); -moz-box-shadow:inset 0px 0px 0px 2px rgba(150, 40, 27,.9); box-shadow:inset 0px 0px 0px 2px rgba(150, 40, 27,.9); }
     .poll button span {margin-right: 5px; }
+
+.panel-leeloo { border: 1px solid #c0392b; }
+    .panel-leeloo  div.panel-heading { background-color: #c0392b; }
+    .panel-leeloo  h3.panel-title { color: #fff; }
+
+.btn-signup { padding-top: 8px; padding-bottom: 8px; }

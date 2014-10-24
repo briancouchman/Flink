@@ -6,8 +6,10 @@
         <div class="row">
             <h1 class="lead">leeloo</h1>
             <p class="tagline">Une application mobile pour faciliter les rencontres libertines</p>
-            <p><a class="btn btn-default btn-lg" role="button" href="/#/signup">Creer un profil</a>
-                <a class="btn btn-action btn-lg" role="button" ga('send', 'event', 'app', 'download');>Telecharger pour Android</a></p>
+            <p>
+                <a class="btn btn-default btn-lg" role="button" href="/#/signup">Créer un profil</a>
+                <a class="btn btn-action btn-lg" role="button"  data-toggle="modal" data-target="#downloadApp">Télécharger l'application</a>
+            </p>
         </div>
     </div>
 </header>
@@ -96,7 +98,50 @@
             </div>
         </div> <!-- /row  -->
 
+        <div class="row">
+            <div class="col-md-12 col-sm-12 highlight">
+                <p class="text-center">
+                    <a class="btn btn-action btn-sm btn-signup" role="button" href="/#/signup">J'aime l'idée et je voudrais m'inscrire</a>
+               </p>
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- /Highlights -->
+
+
+<!-- Modal ga('send', 'event', 'app', 'download');-->
+<div class="modal fade" id="downloadApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">En cours de développement</h4>
+            </div>
+            <div class="modal-body">
+                <p>L'application mobile Leeloo est en cours de développement.</p>
+                <p>Nous travaillons a vous offrir la possiblité de voir qui est libre ce soir autour de votre position actuelle parmi les utilisateurs de Leeloo, et de vous permettre de les rencontrer</p>
+                <p>Laissez nous votre email si vous souhaitez etre prevenu quand elle sera disponible</p>
+
+                <form>
+                    <div class="row top-margin">
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-addon">@</div>
+                                    <input type="email" class="form-control" name="email" ng-model="email" placeholder="Entrez votre email (optionel)"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+                <button type="button" class="btn btn-primary" ng-click="download()">J'ai hâte !</button>
+            </div>
+        </div>
+    </div>
+</div>
 
