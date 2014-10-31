@@ -46,6 +46,17 @@ module.exports = function(app){
 
     })
 
+    router.get('/profiles/fb/:fbId', function(req,res){
+        var facebookId = req.params.fbId;
+
+        var profile = profileController.getFb(facebookId);
+        if(typeof profile !== "undefined"){
+            res.send(profile);
+        }else{
+            res.status(404).send("Unknown profile")
+        }
+    })
+
 
     /**
      * Find a profile

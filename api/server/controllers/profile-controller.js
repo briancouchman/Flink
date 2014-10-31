@@ -39,6 +39,20 @@ module.exports = {
         return profile;
     },
 
+    getFb: function(fbId){
+        var profile, profiles = this.all();
+
+        for(var i = 0; i < profiles.length; i++){
+            var p = profiles[i];
+            if(typeof p.fbId !== 'undefined' && p.fbId == fbId){
+                profile = p;
+                break;
+            }
+        }
+
+        return profile;
+    },
+
     all: function(){
         var _profiles = [];
 
@@ -48,7 +62,8 @@ module.exports = {
                 username: _profile.username,
                 description: _profile.description,
                 email: _profile.email,
-                password: _profile.password
+                password: _profile.password,
+                fbId: _profile.fbId
             })
         }
 
