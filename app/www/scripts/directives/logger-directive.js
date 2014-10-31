@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').directive('loggerDirective', function(){
+angular.module('leeloo').directive('loggerDirective', function(){
 
   var _controller = function(){
     var logger = document.getElementById("logger");
@@ -19,7 +19,7 @@ angular.module('glidr').directive('loggerDirective', function(){
   }
 
   return {
-    template: '<div id="logger" style="position:absolute; bottom:50px; height: 200px; background-color:white; width: 100%; overflow: auto"></div>',
+    template: '<div id="logger" style="position:absolute; bottom:50px; height: 200px; background-color:white; width: 100%; overflo"></div>',
     controller: _controller
   }
 });

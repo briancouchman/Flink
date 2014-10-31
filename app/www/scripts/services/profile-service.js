@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').factory('profileService', function($resource, $q, $http, storageService) {
+angular.module('leeloo').factory('profileService', function($resource, $q, $http, storageService) {
   console.log("Loading profileService");
 
   //var server = "http://ec2-54-68-223-98.us-west-2.compute.amazonaws.com";
@@ -9,6 +9,7 @@ angular.module('glidr').factory('profileService', function($resource, $q, $http,
   var CURRENT_PROFILE = "CURRENT_PROFILE";
 
   var Profile = $resource(server + '/profiles/:username', {username:'@username'});
+  var ProfileFB = $resource(server + '/profiles/fb/:fbId', {fbId:'@fbId'});
 
   return {
     authenticateProfile: function(_username, _password){
@@ -23,6 +24,10 @@ angular.module('glidr').factory('profileService', function($resource, $q, $http,
 
     getProfile: function(_username){
       return Profile.get({username:_username}).$promise;
+    },
+
+    getProfileFb: function(_fbId){
+      return ProfileFB.get({fbId:_fbId}).$promise;
     },
 
     getAllProfiles: function(_username){

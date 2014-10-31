@@ -1,29 +1,22 @@
 .profile {
-  padding-top: 12px;
+    padding-top: 12px;
 }
 
 .profile img {
 }
 
 .profile .preferences li {
-  height: 34px;
+    height: 34px;
 }
 
 .search .profiles {
-  background-color: transparent
+    background-color: transparent
 }
 
 .search .profiles a{
-  background-color: transparent;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+    background-color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-
-#logger {
-    display: none;
-}
-
-.angular-google-map-container { height: 400px; margin: 15px; }
-    .angular-google-map-container img{ max-width: none; }

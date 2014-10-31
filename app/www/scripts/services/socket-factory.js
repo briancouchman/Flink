@@ -1,4 +1,4 @@
-angular.module('glidr').factory('socket', function ($rootScope) {
+angular.module('leeloo').factory('socket', function ($rootScope) {
     var socket = io('http://localhost:8080');
     return {
         on: function (eventName, callback) {

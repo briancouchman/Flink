@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 
-<html ng-app='glidr'>
+<html ng-app='leeloo'>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=medium-width, height=medium-height, target-densitydpi=medium-dpi" />
         <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
         <link rel="stylesheet" href="js/mobile-angular-ui/css/mobile-angular-ui-base.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/skin.css" />
         <link rel="stylesheet" href="css/chat.css" />
-
-        <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
 
         <title>Leeloo</title>
     </head>
@@ -46,7 +44,6 @@
             <div class="btn-group pull-left">
               <div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle">
                 <i class="fa fa-bars"></i> Menu
-                <span ng-show="ready">Device ready</span>
               </div>
             </div>
 
@@ -65,13 +62,14 @@
         </div>
         <div>
           <div logger-directive ></div>
+          <span ng-show="ready">Device ready</span>
         </div>
         <div class="app-body" >
             <ng-view class="app-content"></ng-view>
         </div>
       </div>
         <script type="text/javascript" src="cordova.js"></script>
-        <script src="http://localhost:8080/socket.io/socket.io.js"></script>
+        <!--script src="http://localhost:8080/socket.io/socket.io.js"></script-->
         <script src="js/angular/angular.js"></script>
         <script src="js/angular/angular-route.js"></script>
         <script src="js/angular/angular-resource.js"></script>
@@ -79,11 +77,14 @@
         <script src="js/angular/angular-cookies.js"></script>
         <script src="js/angular/angular-sanitize.js"></script>
         <script src="js/angular/angular-socket-io/socket.js"></script>
+        <script src="js/angular/facebook/angular-facebook.js"></script>
+        <!--script src="js/angular/facebook/angular-facebook-phonegap.js"></script-->
 
+      <!--
             <script src='/bower_components/lodash/dist/lodash.min.js'></script>
             <script src='/bower_components/bluebird/js/browser/bluebird.js'></script>
-            <script src='/bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
-
+            <script src='/bower_components/angular-google-maps/dist/angular-google-maps.js'></script-->
+      -->
 
         <script src="scripts/app.js"></script>
         <script src="scripts/route.js"></script>

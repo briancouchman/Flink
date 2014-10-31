@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').controller('ProfileController', function($scope, profileService, $routeParams){
+angular.module('leeloo').controller('ProfileController', function($scope, profileService, $routeParams){
 
   console.log("Initializing Profile controller");
 

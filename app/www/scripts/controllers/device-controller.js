@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr', ['fsPhonegap']).controller('deviceCtrl', function(deviceService){
+angular.module('leeloo', ['fsPhonegap']).controller('deviceCtrl', function(deviceService){
   deviceService.ready.then(
       function resolved(resp) {
          $scope.ready = true;

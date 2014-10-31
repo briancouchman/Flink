@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').factory('storageService', function() {
+angular.module('leeloo').factory('storageService', function() {
   console.log("Loading storageService");
 
 

@@ -1,4 +1,4 @@
-angular.module('glidr').controller('ChatController', function($scope, socket, profileService){
+angular.module('leeloo').controller('ChatController', function($scope, socket, profileService){
 
     console.log("Initializing Chat controller");
 

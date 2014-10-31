@@ -1,5 +1,6 @@
 /* Header */
-#head { background:#181015 url( ../images/bg_header1.jpg) no-repeat; background-size: cover; background-position-y: -210px; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head { background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; background-position-y: -30px; min-height:720px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+    #head .container {width: 700px; margin-left: 170px }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Ubuntu", sans-serif, Helvetica, Arial; font-size:60px; margin-bottom:6px; color:white; line-height:1.15em; }
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; font-size:20px; font-family: "Ubuntu" sans-serif; }

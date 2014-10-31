@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').config(function($routeProvider,$locationProvider) {
+angular.module('leeloo').config(function($routeProvider,$locationProvider) {
   $routeProvider.when('/login', {
     templateUrl: 'views/login.html',
     controller: 'LoginController'

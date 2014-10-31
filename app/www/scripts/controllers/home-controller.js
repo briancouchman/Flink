@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').controller('HomeController', function($scope){
+angular.module('leeloo').controller('HomeController', function($scope){
 
   console.log("Initializing Home controller");
 

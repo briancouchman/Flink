@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').controller('SearchController', function($scope, searchService, profileService){
+angular.module('leeloo').controller('SearchController', function($scope, searchService, profileService){
 
   console.log("Initializing Search controller");
 

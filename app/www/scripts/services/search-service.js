@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('glidr').factory('searchService', function($q, geolocationService){
+angular.module('leeloo').factory('searchService', function($q, geolocationService){
   return {
 
   }

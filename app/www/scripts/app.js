@@ -1,12 +1,13 @@
 'use strict';
 
-angular.module('glidr', [
+angular.module('leeloo', [
     "ngRoute",
     "ngResource",
     "mobile-angular-ui",
-    'ngCookies',
+   // 'ngCookies',
     'ngResource',
-    'ngSanitize',
+   // 'ngSanitize',
     "btford.socket-io",
-    "google-maps".ns()
+    "facebook",
+    //"uiGmapgoogle-maps"
 ])

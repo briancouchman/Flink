@@ -1,4 +1,52 @@
 <div class="container">
+    <div class="row">
+       <div class="col-xs-12">
+        <p>Connectez vous avec Facebook ou avec votre profil.</p>
+       </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-5 col-xs-offset-1">
+            <div class="form-group">
+                <button class="btn btn-sm btn-primary" ng-click="loginFB()" ng-show="!fbLogged">Login with Facebook</button>
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <form role="form" name="loginForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="user" ng-model="user.profile" placeholder="profil" required/>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" ng-model="user.password" placeholder="mot de passe" required/>
+                </div>
+
+
+                <p class="text-center title">
+                    <button class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="login()">
+                        <strong>Entrer</strong>
+                    </button>
+                </p>
+                <p class="text-danger">{{errorMessage}}</p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--div class="container">
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
       <p class="text-center title">Connection</p>
@@ -31,4 +79,4 @@
 
 
   </form>
-</div>
+</div-->

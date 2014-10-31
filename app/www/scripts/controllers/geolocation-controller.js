@@ -1,4 +1,4 @@
-angular.module('glidr').controller('GeolocationController', function($scope, geolocationService, $rootScope) {
+angular.module('leeloo').controller('GeolocationController', function($scope, geolocationService, $rootScope) {
 
     console.log("Initializing Geolocation controller");
 
