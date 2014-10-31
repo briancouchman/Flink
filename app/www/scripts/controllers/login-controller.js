@@ -45,6 +45,7 @@ angular.module('leeloo').controller('LoginController', function($scope, $locatio
         });
     };
 
+<<<<<<< HEAD
     $scope.me = function() {
        Facebook.api('/me', function(response) {
            var fbuser = response;
@@ -61,6 +62,9 @@ angular.module('leeloo').controller('LoginController', function($scope, $locatio
 
 
     $scope.login = function() {
+=======
+  $scope.login = function() {
+>>>>>>> FETCH_HEAD
     console.log("login controller - login");
     loginService.authenticate($scope.user.profile,$scope.user.password)
       .then(

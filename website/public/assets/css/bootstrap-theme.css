@@ -76,10 +76,17 @@
 	.btn-default.active { color:#333; -webkit-box-shadow:inset 0px 0px 0px 3px #333; -moz-box-shadow:inset 0px 0px 0px 3px #333; box-shadow:inset 0px 0px 0px 3px #333; background: transparent; }
 	
 .btn-action,
+<<<<<<< HEAD
 .btn-primary { color:#FFEFD7; background-image: -webkit-linear-gradient(top, #d64541 0%, #cd423e 100%); background-image: linear-gradient(to bottom, #d64541 0%, #cd423e 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d64541', endColorstr='#cd423e', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); background-repeat: repeat-x; border:0 none; }
 	.btn-action:hover,
 	.btn-action:focus { color:#fff; background: #d64541; }
 	.btn-action:active {	background: #cd423e; }
+=======
+.btn-primary { color:#FFEFD7; background-image: -webkit-linear-gradient(top, #FF9B22 0%, #FF8C00 100%); background-image: linear-gradient(to bottom, #FF9B22 0%, #FF8C00 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffFF9B22', endColorstr='#ffFF8C00', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); background-repeat: repeat-x; border:0 none; }
+	.btn-action:hover,
+	.btn-action:focus { color:#fff; background: #FF9B22; }
+	.btn-action:active {	background: #FF8C00; }
+>>>>>>> FETCH_HEAD
 
 
 /*******************************/

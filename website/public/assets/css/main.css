@@ -1,9 +1,16 @@
 /* Header */
+<<<<<<< HEAD
 #head { background:#181015 url( ../images/bg_header.jpg) no-repeat; background-size: cover; background-position-y: -30px; min-height:720px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
     #head .container {width: 700px; margin-left: 170px }
 #head.secondary { height:100px; min-height: 100px; padding-top:0px; }
 	#head .lead { font-family:"Ubuntu", sans-serif, Helvetica, Arial; font-size:60px; margin-bottom:6px; color:white; line-height:1.15em; }
 	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; font-size:20px; font-family: "Ubuntu" sans-serif; }
+=======
+#head { background:#181015 url( ../images/bg_header1.jpg) no-repeat; background-size: cover; background-position-y: -280px; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+#head.secondary { height:100px; min-height: 100px; padding-top:0px; }
+	#head .lead { font-family:"Open sans", Helvetica, Arial; font-size:44px; margin-bottom:6px; color:white; line-height:1.15em; }
+	#head .tagline { color:rgba(255,255,255,0.75); margin-bottom:25px; }
+>>>>>>> FETCH_HEAD
 		#head .tagline a { color:#fff; }
 	#head .btn { margin-bottom:10px;}
 	#head .btn-default { text-shadow: none; background:transparent; color:rgba(255,255,255,.5); -webkit-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); -moz-box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); box-shadow:inset 0px 0px 0px 3px rgba(255,255,255,.5); background: transparent; }
@@ -13,7 +20,11 @@
 		#head .btn-default.active { color:#fff; -webkit-box-shadow:inset 0px 0px 0px 3px #fff; -moz-box-shadow:inset 0px 0px 0px 3px #fff; box-shadow:inset 0px 0px 0px 3px #fff; background: transparent; }
 
 @media (max-width: 767px) {
+<<<<<<< HEAD
 	#head { min-height:420px; padding-top:160px;  background:#181015}
+=======
+	#head { min-height:420px; padding-top:160px; }
+>>>>>>> FETCH_HEAD
 	#head .lead { font-size: 34px; }
 }
 
@@ -32,9 +43,14 @@
 
 
 /* Typography */
+<<<<<<< HEAD
 h1, h2, h3, h4, h5, h6 { Helvetica, Arial; }
 h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
 p { font-size: 1.1em; }
+=======
+h1, h2, h3, h4, h5, h6 { font-family:"Open sans", Helvetica, Arial; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top:30px; }
+>>>>>>> FETCH_HEAD
 blockquote { font-style: italic; font-family: Georgia; color:#999; margin:30px 0 30px; }
 label { color: #777; }
 .thin { font-weight:300; }
@@ -82,6 +98,7 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }
 	.widget-simplenav a{ margin:0 5px; }
+<<<<<<< HEAD
 
 .poll { width: 100%; text-align: center; }
     .poll button{ padding: 2px 4px; padding: 3px; color: rgba(150, 40, 27, .91); box-shadow: none; }
@@ -93,3 +110,5 @@ img.pull-left { margin-right: 10px; }
     .panel-leeloo  h3.panel-title { color: #fff; }
 
 .btn-signup { padding-top: 8px; padding-bottom: 8px; }
+=======
+>>>>>>> FETCH_HEAD

@@ -1,6 +1,10 @@
 'use strict';
 
+<<<<<<< HEAD
 angular.module('leeloo').factory('geolocationService', function($q){
+=======
+angular.module('flink').factory('geolocationService', function($q){
+>>>>>>> FETCH_HEAD
   return {
 
     /**

@@ -4,6 +4,7 @@ angular.module('leeloo').factory('profileService', function($resource, $q, $http
   console.log("Loading profileService");
 
   //var server = "http://ec2-54-68-223-98.us-west-2.compute.amazonaws.com";
+<<<<<<< HEAD
   var server = "http://localhost:8080";
 
   var CURRENT_PROFILE = "CURRENT_PROFILE";
@@ -20,6 +21,23 @@ angular.module('leeloo').factory('profileService', function($resource, $q, $http
 
         return $http.get(server + '/profiles/' + _username + '/authenticate/' + _password)
       //return Profile.get({username:_username, password: _password}).$promise;
+=======
+  var server = "http://localhost:8000";
+
+  var CURRENT_PROFILE = "CURRENT_PROFILE";
+
+  var Profile = $resource(server + '/profiles/:username/:password', {username:'@username', password: '@password'}, {
+    authenticate: {method: 'GET'}
+  });
+
+  return {
+    authenticateProfile: function(_username, _password){
+      console.log("profile service - authenticate profile - " + _username + "/" + _password);
+    if(/*typeof hex_md5 == "function"*/ false){
+        _password = hex_md5(_password);
+      }
+      return Profile.get({username:_username, password: _password}).$promise;
+>>>>>>> FETCH_HEAD
     },
 
     getProfile: function(_username){

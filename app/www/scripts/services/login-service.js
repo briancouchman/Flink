@@ -21,6 +21,7 @@ angular.module('leeloo').factory('loginService', function($http, storageService,
     storageService.clear("session.user");
     }
 
+<<<<<<< HEAD
     return {
         authenticate: function(username, password){
                 console.log("login service - authenticate");
@@ -57,5 +58,35 @@ angular.module('leeloo').factory('loginService', function($http, storageService,
             }
             profileService.clearCurrentProfile();
         }
+=======
+	return {
+    authenticate: function(username, password){
+			console.log("login service - authenticate");
+			var promise = profileService.authenticateProfile(username, password);
+			promise.then(
+				function(profile){
+					console.log("Authentication of " + user + " successfull");
+					persistSession({
+						authentified: true,
+						user: profile.user
+					});
+					profileService.registerCurrentProfile(profile);
+				},
+				function(error){
+					console.log(error);
+				}
+			)
+			return promise;
+    },
+
+    isAuthentified: function(){
+      return readSession().authentified == "true" ? true : false;
+    },
+
+    logout: function(){
+      console.log("Login service - logout");
+      cleanSession();
+			profileService.clearCurrentProfile();
+>>>>>>> FETCH_HEAD
     }
 });
