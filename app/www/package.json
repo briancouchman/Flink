@@ -1,0 +1,14 @@
+{
+  "name": "Leeloo",
+  "version": "0.1.1",
+  "description": "Leeloo Phonegap mobile application",
+  "author": "Brian Couchman <brian.couchman@gmail.com>",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-compress": "^0.12.0",
+    "grunt-ec2": "^0.9.1",
+    "grunt-phonegap-build": "0.0.8",
+    "grunt-shell": "^1.1.1"
+  }
+}

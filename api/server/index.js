@@ -1,9 +1,9 @@
 var express = require('express');
-var AWS = require('aws-sdk');
+//var AWS = require('aws-sdk');
 var fs = require('fs');
 
-var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
-AWS.config.credentials = credentials;
+//var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
+//AWS.config.credentials = credentials;
 
 var app = express();
 var http = require('http').createServer(app);

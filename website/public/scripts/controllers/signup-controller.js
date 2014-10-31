@@ -18,10 +18,13 @@ angular.module('glidr').controller('SignupController', function($scope, profileS
 
     $scope.signup = function(){
 
-        $scope.email;
+       profileService.save({
+           username: $scope.profile,
+           email: $scope.email,
+           sites: $scope.site
+       });
 
-
-        ga('send', 'event', 'app', 'signup');
+       ga('send', 'event', 'app', 'signup');
     }
 
     $scope.download = function(){

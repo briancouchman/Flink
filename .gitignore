@@ -1,3 +1,12 @@
 bower_components
 node_modules
 app/platforms/**
+.idea/**
+app/www/.idea/**
+api/.idea/**
+website/public/.idea/**
+website/.idea/**
+app/www/dist/**
+website/templates/**
+api/aws-keys.json
+website/aws-keys.json
